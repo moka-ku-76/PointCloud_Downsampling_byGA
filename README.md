@@ -57,32 +57,35 @@ Share/
 # 各ファイルの概要
 
 
-Base_featue_vector.ipynb　　#目的関数として利用する、ベース特徴ベクトルを計算する
+**Base_featue_vector.ipynb**　　#目的関数として利用する、ベース特徴ベクトルを計算する
 
-DataLoaderForGAdownsampling.py  #参考コードのPointnet_Pointnet2_pytorch/data_utils/ModelNetDataLoader.pyを遺伝アルゴリズム用に変更したもの。特徴ベクトルも同時に取り出せるようになっている。
+**DataLoaderForGAdownsampling.py**  #参考コードのPointnet_Pointnet2_pytorch/data_utils/ModelNetDataLoader.pyを遺伝アルゴリズム用に変更したもの。特徴ベクトルも同時に取り出せるようになっている。
 
-Downsampling_test.ipynb  #ランダム、FPS、提案手法の性能を比較する
+**Downsampling_test.ipynb**  #ランダム、FPS、提案手法の性能を比較する
 
-GA_downsampling.ipynb  #遺伝的アルゴリズムで探索を実行するファイル。最も時間がかかる
+**GA_downsampling.ipynb**  #遺伝的アルゴリズムで探索を実行するファイル。最も時間がかかる
 
-Graph.ipynb  #各ipynbファイルで保存したcsvファイルをもとに図を描画するためのファイル
+**Graph.ipynb**  #各ipynbファイルで保存したcsvファイルをもとに図を描画するためのファイル
 
-cls_ssg_feature_selection.py  #機械学習のモデルが書かれたファイル。参考コードのPointnet_Pointnet2_pytorch/models/pointnet2_cls_ssg.pyを２つに分割させた。チェックポイントは同じものを利用することができる。
+**cls_ssg_feature_selection.py**  #機械学習のモデルが書かれたファイル。参考コードのPointnet_Pointnet2_pytorch/models/pointnet2_cls_ssg.pyを２つに分割させた。チェックポイントは同じものを利用することができる。
 
 
-Results
-Figures  #図を保存するディレクトリ。修論に利用した図はThesisにある。他は参考程度に。
+**Results**
+**Figures**  #図を保存するディレクトリ。修論に利用した図はThesisにある。他は参考程度に。
 
-Files  #実験で取得した結果をcsv形式で保存している
+**Files**  #実験で取得した結果をcsv形式で保存している
 
- downsampling #３つの手法のダウンサンプリングテストの結果を保存
+ **downsampling** #３つの手法のダウンサンプリングテストの結果を保存
  
- GA_downsampling #遺伝的アルゴリズムの結果を保存
-  Hall of fame #殿堂入り。最も適応値が高い個人を保存。0,1で保存
-  log #世代ごとの適応値と正解率の最大、最小、平均、標準偏差を保存。
-  pop #最終集団の情報を保存。個体数は30。選択インデックスを保存。
+ **GA_downsampling** #遺伝的アルゴリズムの結果を保存
+ 
+  _Hall of fame_ #殿堂入り。最も適応値が高い個人を保存。0,1で保存
   
- target #正解ラベルのデータを保存。
+  _log_ #世代ごとの適応値と正解率の最大、最小、平均、標準偏差を保存。
+  
+  _pop_ #最終集団の情報を保存。個体数は30。選択インデックスを保存。
+  
+ **target** #正解ラベルのデータを保存。
   
 
 
@@ -96,6 +99,11 @@ Files  #実験で取得した結果をcsv形式で保存している
 ベース特徴ベクトルは既に保存してあるので2からでも良い
 
 別の学習済みモデルを利用したいときはPointNet++の手順に従って、あらためて学習しチェックポイントを作成する。
+
+# 追記
+このリポジトリの容量を軽くするためにPointNet++とResultsのディレクトリを削除
+``git clone 
+
 
 ```python
 
