@@ -21,7 +21,7 @@ numpy, pandas, pathlibなどの基本ライブラリの知識を要する
 
 ## Shareフォルダの構成
 
-
+```
 Share/
     ├── Mywork/
     │   ├── Base_featue_vector.ipynb
@@ -51,7 +51,7 @@ Share/
     │   └── cls_ssg_feature_selection.py
     ├── Pointnet_Pointnet2_pytorch/
     └── README.md
-
+```
 
 
 # 各ファイルの概要
