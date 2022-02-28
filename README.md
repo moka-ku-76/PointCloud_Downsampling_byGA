@@ -18,6 +18,8 @@
 その他
 numpy, pandas, pathlibなどの基本ライブラリ
 
+また、実行ファイルは全てipynbファイルであり、jupyter notebook上での実行を想定している。
+
 # 準備
 1. このディレクトリをクローン  
 `git clone https://github.com/moka-ku-76/PointCloud_Downsampling_byGA`
