@@ -19,15 +19,19 @@
 numpy, pandas, pathlibなどの基本ライブラリ
 
 # 準備
-1. このディレクトリをクローン
+1. このディレクトリをクローン  
 `git clone https://github.com/moka-ku-76/PointCloud_Downsampling_byGA`
-2. PointNet++のディレクトリをクローン
+
+2. PointNet++のディレクトリをクローン  
 `git clone https://github.com/yanx27/Pointnet_Pointnet2_pytorch`
+
 3. ModelNet40のデータセットを[こちら](https://www.kaggle.com/balraj98/modelnet40-princeton-3d-object-dataset)からダウンロード（Kaggleアカウント必要、サイズは約10GB）
-4. `Pointnet_Pointnet2_pytorch/`下にdataディレクトリ作成し、解凍
+
+4. `Pointnet_Pointnet2_pytorch/`下にdataディレクトリ作成し、解凍  
 `mkdir Pointnet_Pointnet2_pytorch/data`
 `unzip modelnet40_mormal_resampled.zip Pointnet_Pointnet2_pytorch/data`
-5. [DEAP](https://deap.readthedocs.io/en/master/)のインストール
+
+5. [DEAP](https://deap.readthedocs.io/en/master/)のインストール  
 `pip install deap`
 
 # 実行手順
@@ -39,7 +43,7 @@ numpy, pandas, pathlibなどの基本ライブラリ
 
 別の学習済みモデルを利用したいときはPointNet++の手順に従って、あらためて学習しチェックポイントを作成する。
 
-## Shareフォルダの構成
+## Shareフォルダの構成（全て実行後）
 
 ```
 Share/
