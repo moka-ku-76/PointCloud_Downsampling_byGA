@@ -16,8 +16,28 @@
 参考サイト：[DEAPを用いた特徴選択](https://qiita.com/kimisyo/items/2a1fc6a28b389f3e0561)
 
 その他
-numpy, pandas, pathlibなどの基本ライブラリの知識を要する
+numpy, pandas, pathlibなどの基本ライブラリ
 
+# 準備
+1. このディレクトリをクローン
+`git clone https://github.com/moka-ku-76/PointCloud_Downsampling_byGA`
+2. PointNet++のディレクトリをクローン
+`git clone https://github.com/yanx27/Pointnet_Pointnet2_pytorch`
+3. ModelNet40のデータセットを[こちら](https://www.kaggle.com/balraj98/modelnet40-princeton-3d-object-dataset)からダウンロード（Kaggleアカウント必要、サイズは約10GB）
+4. `Pointnet_Pointnet2_pytorch/`下にdataディレクトリ作成し、解凍
+`mkdir Pointnet_Pointnet2_pytorch/data`
+`unzip modelnet40_mormal_resampled.zip Pointnet_Pointnet2_pytorch/data`
+5. [DEAP](https://deap.readthedocs.io/en/master/)のインストール
+`pip install deap`
+
+# 実行手順
+1. Base_featue_vector.ipynb
+2. GA_downsampling.ipynb
+3. (Graph.ipynb)
+4. Downsampling_test.ipynb
+5. (Graph.ipynb)
+
+別の学習済みモデルを利用したいときはPointNet++の手順に従って、あらためて学習しチェックポイントを作成する。
 
 ## Shareフォルダの構成
 
@@ -31,14 +51,9 @@ Share/
     │   ├── Graph.ipynb
     │   ├── Results/
     │   │   ├── Figures/
-    │   │   │   ├── BaseAccuracy/
-    │   │   │   ├── FeatureSelection/
-    │   │   │   ├── FeatureSelection_GA/
-    │   │   │   ├── FeatureVector/
     │   │   │   ├── GA_downsampling/
     │   │   │   └── Thesis/
     │   │   └── Files/
-    │   │       ├── appendix/
     │   │       ├── downsampling/
     │   │       └── seed0/
     │   │           ├── Feature_vector_base/
@@ -55,8 +70,6 @@ Share/
 
 
 # 各ファイルの概要
-
-
 **Base_featue_vector.ipynb**　　#目的関数として利用する、ベース特徴ベクトルを計算する
 
 **DataLoaderForGAdownsampling.py**  #参考コードのPointnet_Pointnet2_pytorch/data_utils/ModelNetDataLoader.pyを遺伝アルゴリズム用に変更したもの。特徴ベクトルも同時に取り出せるようになっている。
@@ -86,23 +99,8 @@ Share/
   _pop_ #最終集団の情報を保存。個体数は30。選択インデックスを保存。
   
  **target** #正解ラベルのデータを保存。
-  
 
 
-実行の順序は
-1. (Base_featue_vector.ipynb)
-2. GA_downsampling.ipynb
-3. (Graph.ipynb)
-4. Downsampling_test.ipynb
-5. (Graph.ipynb)
-
-ベース特徴ベクトルは既に保存してあるので2からでも良い
-
-別の学習済みモデルを利用したいときはPointNet++の手順に従って、あらためて学習しチェックポイントを作成する。
-
-# 追記
-このリポジトリの容量を軽くするためにPointNet++とResultsのディレクトリを削除
-``git clone 
 
 
 ```python
