@@ -35,7 +35,7 @@ jupyter notebookの使い方については[こちら](https://ai-inter1.com/jup
 （追記）データセットをどこからダウンロードしたのか忘れました。[こちら](https://github.com/yanx27/Pointnet_Pointnet2_pytorch)と同様に[ModelNet40ホームページ](https://modelnet.cs.princeton.edu/)からダウンロードした気がしますが、現在できなくなっています。（ダウンロードをクリックしても反応しない。）ホームページからデータセットをダウンロードできた人は次に進んでください。
 
 4. `Pointnet_Pointnet2_pytorch/`下にdataディレクトリ作成し、解凍  
-`mkdir Pointnet_Pointnet2_pytorch/data` 
+`mkdir Pointnet_Pointnet2_pytorch/data`  
 `unzip [ダウンロードしたディレクトリ]/modelnet40_mormal_resampled.zip -d Pointnet_Pointnet2_pytorch/data`
 
 5. [DEAP](https://deap.readthedocs.io/en/master/)のインストール  
