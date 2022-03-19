@@ -32,7 +32,7 @@ jupyter notebookの使い方については[こちら](https://ai-inter1.com/jup
 `git clone https://github.com/yanx27/Pointnet_Pointnet2_pytorch`
 
 3. ~ModelNet40のデータセットを[こちら](https://www.kaggle.com/balraj98/modelnet40-princeton-3d-object-dataset)からダウンロード（Kaggleアカウント必要、サイズは約10GB）~
-（追記）データセットをどこからダウンロードしたのか忘れました。[こちら](https://github.com/yanx27/Pointnet_Pointnet2_pytorch)と同様に[ModelNetホームページ](https://modelnet.cs.princeton.edu/)からダウンロードした気がしますが、現在できなくなっています。（ダウンロードをクリックしても反応しない。）こちらからデータセットをダウンロードできた人は次に進んでください。
+（追記）データセットをどこからダウンロードしたのか忘れました。[こちら](https://github.com/yanx27/Pointnet_Pointnet2_pytorch)と同様に[ModelNet40ホームページ](https://modelnet.cs.princeton.edu/)からダウンロードした気がしますが、現在できなくなっています。（ダウンロードをクリックしても反応しない。）ホームページからデータセットをダウンロードできた人は次に進んでください。
 
 4. `Pointnet_Pointnet2_pytorch/`下にdataディレクトリ作成し、解凍  
 `mkdir Pointnet_Pointnet2_pytorch/data`
